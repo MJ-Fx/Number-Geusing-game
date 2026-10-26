@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 IQ TEST · Number Guess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🧠 IQ TEST</h1>
+        <p class="subhead">Guess the secret number between 1 and 100</p>
+
+        <div class="panel">
+            <div class="input-area">
+                <label for="guessInput">Your guess:</label>
+                <input type="number" id="guessInput" min="1" max="100" placeholder="1–100">
+                <button id="guessBtn">Guess</button>
+            </div>
+
+            <div id="feedback" class="feedback">🎯 I'm thinking of a number between 1 and 100.</div>
+
+            <div class="attempts-box">
+                Attempts: <span id="attemptsDisplay">0</span> |
+                <span id="trialInfo" class="trial-badge">Trials left: 3</span>
+            </div>
+
+            <button id="resetBtn" class="reset-btn">🔄 New Game</button>
+        </div>
+
+        <p class="footer-note">📈 too low · 📉 too high · 🎉 correct</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
